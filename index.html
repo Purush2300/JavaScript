@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+<body>
+
+
+
+    <button onclick="
+        console.log(`cart quality ${quality}`);
+        ">cart quality</button>
+
+    <button onclick="
+    quality++;
+    console.log(`cart quality ${quality}.`);
+    ">add to cart</button>
+    <button onclick="
+    quality+=2;
+    console.log(`cart quality ${quality}.`);
+    ">+2</button>
+    <button onclick="
+    quality+=3;
+    console.log(`cart quality ${quality}.`);
+    ">+3</button>
+    <button onclick="
+    console.log(`cart quality empty.`);
+    quality=0;
+    console.log(`cart quality ${quality}.`);
+    ">reset cart</button>
+ <script>
+        let quality = 0;
+        
+    </script>
+</body>
+</html>
