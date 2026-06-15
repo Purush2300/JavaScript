@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean</title>
+</head>
+<body>
+    <p>Rock Paper Scissor game</p>
+   <button onclick="
+   let randomguess=Math.random();
+   let computerguess='';
+   if(randomguess>=0 && randomguess<=1/3){
+    computerguess='rock';
+
+   }else if(randomguess>=1/3 && randomguess<=2/3){
+    computerguess='paper';
+   }else if(randomguess>=2/3 && randomguess<=1){
+    computerguess='scissor';
+   }
+   let res='';
+   if(computerguess=='rock'){
+    res='tie';
+   }else if(computerguess=='paper'){
+    res='you lose';
+   } else if(computerguess=='scissor'){
+    res='you won';
+   }
+   
+   alert(`you guess rock computer guess ${computerguess} , ${res}`);
+   
+   ">rock</button>
+   <button
+   onclick="
+   let randomguess=Math.random();
+   let computerguess='';
+   if(randomguess>=0 && randomguess<=1/3){
+    computerguess='rock';
+
+   }else if(randomguess>=1/3 && randomguess<=2/3){
+    computerguess='paper';
+   }else if(randomguess>=2/3 && randomguess<=1){
+    computerguess='scissor';
+   }
+   let res='';
+   if(computerguess=='rock'){
+    res='you win';
+   }else if(computerguess=='paper'){
+    res='tie';
+   } else if(computerguess=='scissor'){
+    res='you loss';
+   }
+   
+   alert(`you guess paper computer guess ${computerguess} , ${res}`);
+   
+   ">paper</button>
+    <button
+    onclick="
+   let randomguess=Math.random();
+   let computerguess='';
+   if(randomguess>=0 && randomguess<=1/3){
+    computerguess='rock';
+
+   }else if(randomguess>=1/3 && randomguess<=2/3){
+    computerguess='paper';
+   }else if(randomguess>=2/3 && randomguess<=1){
+    computerguess='scissor';
+   }
+   let res='';
+   if(computerguess=='rock'){
+    res='you loss';
+   }else if(computerguess=='paper'){
+    res='you win';
+   } else if(computerguess=='scissor'){
+    res='tie';
+   }
+   
+   alert(`you guess scissor computer guess ${computerguess} , ${res}`);
+   
+   "
+    >scissor</button>
+    <script>
+
+
+
+    </script>
+    
+</body>
+</html>
