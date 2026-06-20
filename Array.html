@@ -9,8 +9,10 @@
     <p >Todo List</p>
     <!-- <button onclick="Increment()" >increment</button>
     <button onclick="Decrement()">decrement</button> -->
-    <input type="text" class="js-input">
-    <button onclick="addItem()">add</button>
+    <input type="text" class="js-input" onkeydown="Press(event)">
+    <button onclick="addItem()" >add</button>
+    <div class="js-todo">
+    </div>
     <script>
         // const arr =[1,2,3,4,5];
         // console.log([]);
@@ -27,12 +29,27 @@
         // document.querySelector(".scoredisplay").innerHTML=a;
         // }
         const arr=[];
+        function Press(event){
+            if(event.key ==='Enter'){
+                addItem();
+            }
+        }
+        function play(){
+            let todoValue="";
+        for(let i=0;i<arr.length;i++){
+            
+            let value=`<p>${arr[i]}</p>`;
+            todoValue+=value;
+        }
+        document.querySelector(".js-todo").innerHTML=todoValue;
+        console.log(todoValue);
+        }
         function addItem(){
             const inputNumber=document.querySelector(".js-input");
             const inputValue=inputNumber.value;
             arr.push(inputValue);
-            console.log(arr);
             inputNumber.value="";
+            play();
         }
 
     </script>
