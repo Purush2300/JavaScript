@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        const Arr=[1,2,3,4,5];
+       /* const Arr=[1,2,3,4,5];
         const result=Arr.reduce( (sum,i)=>{
             return sum+i;
         },0);
@@ -15,9 +15,29 @@
         //     console.log(i);
         // });
         console.log(result)
-        
-       
-
+        function greet(a,b){
+            return a+b;
+        }
+      const x= greet(10,5);
+      console.log(x);*/
+      function add(a,b){
+        console.log(a+b);
+      }
+      function values(set){
+        set(10,20);
+      }
+      values(add);
+      function greet(name){
+        console.log("hello "+name);
+      }
+      function pass(callback){
+        callback("puru");
+      }
+      function bye(name){
+        console.log("bye "+name);
+      }
+      pass(greet);
+      pass(bye);
     </script>
 </body>
 </html>
