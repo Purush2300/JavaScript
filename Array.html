@@ -6,6 +6,35 @@
     <title>Arrays-Js</title>
 </head>
 <body>
-    
+    <p >Todo List</p>
+    <!-- <button onclick="Increment()" >increment</button>
+    <button onclick="Decrement()">decrement</button> -->
+    <input type="text" class="js-input">
+    <button onclick="addItem()">add</button>
+    <script>
+        // const arr =[1,2,3,4,5];
+        // console.log([]);
+        // console.log(arr[0]=10);
+        // console.log(arr)
+        // let a=0;
+        // function Increment(){
+        //     a++;
+        //     console.log(a);
+        // document.querySelector(".scoredisplay").innerHTML=a;
+        // }
+        // function Decrement(){
+        //     a--;
+        // document.querySelector(".scoredisplay").innerHTML=a;
+        // }
+        const arr=[];
+        function addItem(){
+            const inputNumber=document.querySelector(".js-input");
+            const inputValue=inputNumber.value;
+            arr.push(inputValue);
+            console.log(arr);
+            inputNumber.value="";
+        }
+
+    </script>
 </body>
 </html>
