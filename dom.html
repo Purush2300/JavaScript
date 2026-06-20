@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <button 
+    onclick="subscribe()"
+    
+   class="sub_button" >subscribe</button>
+   <p>Amazon Delivery calculator</p>
+   <input type="text" class="inputvalue" onkeydown="handleKeyboard(event)">
+   <button  onclick="
+   amazonCalculate()
+   ">calculate</button>
+   <p class="pricedisplay"></p>
+    <script>
+       function subscribe(){
+        
+        const subButton=document.querySelector('.sub_button');
+        if(subButton.innerText ==="subscribe"){
+            subButton.innerHTML ="subscribed"
+        }
+        else{
+            subButton.innerHTML="subscribe";
+        }
+
+       }
+
+
+       function amazonCalculate(){
+        const inputV=document.querySelector(".inputvalue");
+        let inputNumber=Number(inputV.value);
+       if(inputNumber<100){
+        inputNumber+=10;
+       }
+    document.querySelector(".pricedisplay").innerHTML=`${inputNumber}/-`;
+       }
+       function handleKeyboard(event){
+        if(event.key==='Enter'){
+            amazonCalculate();
+        }
+       }
+    </script>
+</body>
+</html>

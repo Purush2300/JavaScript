@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Converting to json and json to Js</title>
+</head>
+<body>
+    <script>
+        const student={
+            id:10,
+            name:"guru",
+            marks:{
+                subject:"maths"
+            },
+            fun1(){
+                console.log("inside object function");
+            }
+        };
+        console.log(student);
+        let jsonString=JSON.stringify(student);
+        console.log(jsonString);
+        let jsObject = JSON.parse(jsonString);
+        console.log(jsObject);
+    </script>
+</body>
+</html>
