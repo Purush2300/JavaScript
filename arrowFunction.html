@@ -12,13 +12,17 @@
         }
         console.log(num(5));
 
-        function greet(a,b){
-            console.log(a+b);
+        function greet(a){
+            console.log("welcome "+a);
         }
-        function callback(x){
-           x(10,20);
+        function bye(b){
+            console.log("bye "+b);
         }
-        callback(greet);
+        function callback(x,y){
+          x("purush");
+          y("purush");
+        }
+        callback(greet,bye);
 
 
 
