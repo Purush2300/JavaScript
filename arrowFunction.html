@@ -11,6 +11,17 @@
             return i*i;
         }
         console.log(num(5));
+
+        function greet(a,b){
+            console.log(a+b);
+        }
+        function callback(x){
+           x(10,20);
+        }
+        callback(greet);
+
+
+
     </script>
 </body>
 </html>
