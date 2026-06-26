@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callBack</title>
+</head>
+<body>
+    <script>
+        callmom(study);
+        function study(){
+            console.log("study completed");
+        }
+        
+        function callmom(name){
+            name();
+            console.log("call mom");
+        }
+    </script>
+</body>
+</html>
